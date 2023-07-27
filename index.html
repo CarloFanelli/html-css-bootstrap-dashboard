@@ -38,7 +38,7 @@
 
         <header>
             <nav
-                class="navbar navbar-expand-lg navbar-light bg-light flex-nowrap p-1">
+                class="h_4 navbar navbar-expand-lg navbar-light bg-light flex-nowrap p-1">
                 <a class="navbar-brand" href="#">
                     <img src="./assets/img/logo.svg" alt>
                 </a>
@@ -76,7 +76,8 @@
                                 data-toggle="dropdown" href="#">
                                 <i class="fa-solid fa-bell text-warning"></i>
                             </a>
-                            <div class="dropdown-menu dropdown-menu-right my_dropdown">
+                            <div
+                                class="dropdown-menu dropdown-menu-right my_dropdown">
                                 <button class="dropdown-item" type="button">Profilo</button>
                                 <button class="dropdown-item" type="button">Fatturazione</button>
                                 <button class="dropdown-item" type="button">Logout</button>
@@ -89,6 +90,37 @@
         </header>
 
         <main>
+
+            <section class="sidebar d-flex flex-column justify-content-between"
+                style="background-image: url(./assets/img/sidebar-bg.png);">
+
+                <div class="sidebar_top">
+                    <ul class="p-3 list-unstyled">
+                        <li class="py-2">
+                            <a href="#" class="text-white"><i class="fa-solid fa-house"><span class="ml-md-3 d-none d-lg-inline">Home</span></i></a>
+                        </li>
+                        <li class="py-2">
+                            <a href="#" class="text-white"><i class="fa-solid fa-chart-simple"><span class="ml-md-3 d-none d-lg-inline">Stats</span></i></a>
+                        </li>
+                        <li class="py-2">
+                            <a href="#" class="text-white"><i class="fa-solid fa-signal"><span class="ml-md-3 d-none d-lg-inline">Signals</span></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.sidebar_top -->
+
+                <div class="sidebar_bottom pb-4">
+                    <a href="#" class="text-white p-3"><i class="fa-solid fa-gear"><span class="ml-md-3 d-none d-lg-inline">Settings</span></i></a>
+                </div>
+                <!-- /.sidebar_bottom -->
+
+            </section>
+            <!-- /.sidebar -->
+
+            <section class="dashboard_content">
+
+            </section>
+            <!-- /.dashboard_content -->
 
         </main>
 

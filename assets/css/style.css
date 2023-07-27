@@ -1,3 +1,13 @@
+:root{
+    --dh-sidebar:#051e34;
+    --dh-img: url(./assets/img/sidebar-bg.png);
+    --dh-navbar-heigt: 4rem;
+}
+
+.h_4{
+    height: var(--dh-navbar-heigt);
+}
+
 header {
 
     .my_dropdown {
@@ -12,4 +22,12 @@ header {
             font-size: 0.6rem;
         }
     }
+}
+
+.sidebar{
+    height: calc(100vh - var(--dh-navbar-heigt));
+    width: min-content;
+    background-color: var(--dh-sidebar);
+    background-image: var(--dh-img);
+
 }
