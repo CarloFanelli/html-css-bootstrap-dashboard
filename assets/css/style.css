@@ -28,6 +28,14 @@ header {
     height: calc(100vh - var(--dh-navbar-heigt));
     width: min-content;
     background-color: var(--dh-sidebar);
-    background-image: var(--dh-img);
+}
 
+.banner{
+
+    & span {
+        background-color: rgba(0, 0, 0, 0.3);
+        color: white;
+        border-radius: 1rem;
+        font-weight: 400;
+    }
 }
