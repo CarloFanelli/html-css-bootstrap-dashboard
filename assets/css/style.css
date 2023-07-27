@@ -1,0 +1,15 @@
+header {
+
+    .my_dropdown {
+        right: 1.5rem !important;
+        top: 2.5rem;
+    }
+
+    @media (max-width: 576px) {
+
+
+        ::placeholder {
+            font-size: 0.6rem;
+        }
+    }
+}

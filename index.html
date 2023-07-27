@@ -6,7 +6,10 @@
         <meta name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
 
         <!-- Bootstrap CSS -->
         <link rel="stylesheet"
@@ -14,9 +17,7 @@
             integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
             crossorigin="anonymous">
 
-
-
-            <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="stylesheet" href="./assets/css/style.css">
 
         <title>Dashboard</title>
     </head>
@@ -35,18 +36,65 @@
             integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
             crossorigin="anonymous"></script>
 
+        <header>
+            <nav
+                class="navbar navbar-expand-lg navbar-light bg-light flex-nowrap p-1">
+                <a class="navbar-brand" href="#">
+                    <img src="./assets/img/logo.svg" alt>
+                </a>
 
-            <header>
+                <div class=" navbar-collapse d-flex"
+                    id="navbarSupportedContent">
 
-            </header>
+                    <form class="form-control col d-flex align-items-center">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input class="form-control border-0 mr-sm-2"
+                            type="search"
+                            placeholder="Prova a cercare: lezioni di Laravel"
+                            aria-label="Search">
 
-            <main>
+                    </form>
 
-            </main>
+                    <ul class="navbar-nav m-auto">
+                        <li class="nav-item d-none d-lg-block">
+                            <a class="nav-link" href="#">
+                                <i class="fa-solid fa-list-ul"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item d-none d-lg-block">
+                            <a class="nav-link" href="#">
+                                <i class="fa-solid fa-circle-question"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item d-none d-lg-block">
+                            <a class="nav-link" href="#">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item m-2 m-lg-0">
+                            <a class="nav-link"
+                                data-toggle="dropdown" href="#">
+                                <i class="fa-solid fa-bell text-warning"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right my_dropdown">
+                                <button class="dropdown-item" type="button">Profilo</button>
+                                <button class="dropdown-item" type="button">Fatturazione</button>
+                                <button class="dropdown-item" type="button">Logout</button>
+                            </div>
+                        </li>
 
-            <footer>
+                    </ul>
+                </div>
+            </nav>
+        </header>
 
-            </footer>
+        <main>
+
+        </main>
+
+        <footer>
+
+        </footer>
 
     </body>
 </html>
