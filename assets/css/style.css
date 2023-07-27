@@ -32,10 +32,14 @@ header {
 
 .banner{
 
-    & span {
+    & span, .extra {
         background-color: rgba(0, 0, 0, 0.3);
         color: white;
-        border-radius: 1rem;
+        /* border-radius: 1rem; */
         font-weight: 400;
+    }
+
+    .row :nth-child(3){
+        order: 1;
     }
 }
