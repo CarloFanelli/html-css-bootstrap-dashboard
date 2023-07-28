@@ -1,14 +1,19 @@
-:root{
-    --dh-sidebar:#051e34;
+:root {
+    --dh-sidebar: #051e34;
     --dh-img: url(./assets/img/sidebar-bg.png);
     --dh-navbar-heigt: 4rem;
+    --dh-sidebar-w-lg: 140px;  
+    --dh-sidebar-w: 55px;
 }
 
-.h_4{
+.h_4 {
     height: var(--dh-navbar-heigt);
 }
 
 header {
+    position: fixed;
+    width: 100%;
+    top: 0;
 
     .my_dropdown {
         right: 1.5rem !important;
@@ -24,15 +29,21 @@ header {
     }
 }
 
-.sidebar{
+main {
+    margin-top: var(--dh-navbar-heigt);
+}
+
+.sidebar {
+    /* position: fixed; */
     height: calc(100vh - var(--dh-navbar-heigt));
     width: min-content;
     background-color: var(--dh-sidebar);
 }
 
-.banner{
+.banner {
 
-    & span, .extra {
+    & span,
+    .extra {
         background-color: rgba(0, 0, 0, 0.3);
         color: white;
         /* border-radius: 1rem; */
@@ -41,11 +52,15 @@ header {
 
 }
 
-.general_content{
-    .card{
+.dashboard_content{
+    overflow-y: scroll;
+    width: calc(100vw - var(--dh-sidebar-w));
+}
+.general_content {
+    .card {
 
-         .my_class_id>img{
-            margin-right:0.5rem;
-         }
+        .my_class_id>img {
+            margin-right: 0.5rem;
+        }
     }
 }
