@@ -10,6 +10,10 @@
     height: var(--dh-navbar-heigt);
 }
 
+.mobile_logo{
+    width: var(--dh-sidebar-w);
+}
+
 header {
     position: fixed;
     width: 100%;
@@ -78,5 +82,9 @@ main>.content {
     .dashboard_content{
         overflow-y: scroll;
         width: calc(100vw - var(--dh-sidebar-w-lg));
+    }
+
+    .my_offcanvas{
+        width: 45% !important;
     }
 }
