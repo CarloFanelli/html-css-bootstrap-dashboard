@@ -29,17 +29,20 @@ header {
     }
 }
 
-main {
+main>.content {
     margin-top: var(--dh-navbar-heigt);
+    height: calc(100vh - var(--dh-navbar-heigt));
 }
 
 .sidebar {
     /* position: fixed; */
-    
     height: calc(100vh - var(--dh-navbar-heigt));
-    width: min-content;
+    width: var(--dh-sidebar-w);
     background-color: var(--dh-sidebar);
+    overflow: hidden;
 }
+
+
 
 .banner {
 
@@ -54,6 +57,7 @@ main {
 }
 
 .dashboard_content{
+    right: 0;
     overflow-y: scroll;
     width: calc(100vw - var(--dh-sidebar-w));
 }
@@ -63,5 +67,16 @@ main {
         .my_class_id>img {
             margin-right: 0.5rem;
         }
+    }
+}
+
+@media screen and (min-width:992px) {
+
+    .sidebar{
+        width: var(--dh-sidebar-w-lg);
+    }
+    .dashboard_content{
+        overflow-y: scroll;
+        width: calc(100vw - var(--dh-sidebar-w-lg));
     }
 }
