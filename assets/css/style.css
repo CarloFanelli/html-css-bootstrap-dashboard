@@ -74,6 +74,14 @@ main>.content {
     }
 }
 
+.my_offcanvas{
+    width: 100% !important;
+}
+
+.hover:hover{
+    background: rgba(255, 255, 255, 0.7);
+}
+
 @media screen and (min-width:992px) {
 
     .sidebar{
