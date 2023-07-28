@@ -35,6 +35,7 @@ main {
 
 .sidebar {
     /* position: fixed; */
+    
     height: calc(100vh - var(--dh-navbar-heigt));
     width: min-content;
     background-color: var(--dh-sidebar);
